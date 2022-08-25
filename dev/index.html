@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sahibinden Lit Demo</title>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="../components/sahibinden-button/index.js"></script>
+  </head>
+  <body>
+    <sahibinden-button text="Click meee!"></sahibinden-button>
+  </body>
+  <script>
+    const sahibindenButton = document.querySelector('sahibinden-button');
+    sahibindenButton.addEventListener('button-clicked', () => alert('clicked button'));
+  </script>
+</html>
